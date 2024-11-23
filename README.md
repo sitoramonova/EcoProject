@@ -26,7 +26,6 @@ python manage.py migrate
 
 Запустите сервер разработки Django:
 
-bash
 python manage.py runserver
 
 <b>Запуск с использованием Docker
