@@ -16,18 +16,21 @@ source .venv/bin/activate  # Для Linux/macOS
 
 
 <b>Применение миграций
+
 Создайте структуру базы данных:
 
 python manage.py makemigrations
 python manage.py migrate
 
 <b>Запуск сервера разработки
+
 Запустите сервер разработки Django:
 
 bash
 python manage.py runserver
 
 <b>Запуск с использованием Docker
+
 Если вы хотите запустить проект в контейнерах, выполните следующие шаги:
 
 Убедитесь, что Docker и Docker Compose установлены
@@ -44,6 +47,7 @@ docker-compose up --build
 После запуска API будет доступно по адресу http://127.0.0.1:8000/.
 
 <b>Тестирование
+
 Для проверки работы основных методов API выполните:
 
 python manage.py test
