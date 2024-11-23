@@ -10,24 +10,25 @@ EcoProject — это API для управления отходами, кото
 
 Убедитесь, что у вас активировано виртуальное Python-окружение, и установите зависимости из requirements.txt:
 
+```
 python -m venv .venv
 source .venv/bin/activate  # Для Linux/macOS
 .venv\Scripts\activate     # Для Windows
-
+```
 
 <b>Применение миграций
 
 Создайте структуру базы данных:
-
+```
 python manage.py makemigrations
 python manage.py migrate
-
+```
 <b>Запуск сервера разработки
 
 Запустите сервер разработки Django:
-
+```
 python manage.py runserver
-
+```
 <b>Запуск с использованием Docker
 
 Если вы хотите запустить проект в контейнерах, выполните следующие шаги:
@@ -35,19 +36,21 @@ python manage.py runserver
 Убедитесь, что Docker и Docker Compose установлены
 Проверьте установку:
 
-
+```
 docker --version
 docker-compose --version
-
+```
 Соберите и запустите контейнеры
 Используйте следующую команду:
-
+```
 docker-compose up --build
+```
 После запуска API будет доступно по адресу http://127.0.0.1:8000/.
 
 <b>Тестирование
 
 Для проверки работы основных методов API выполните:
-
+```
 python manage.py test
+```
 
